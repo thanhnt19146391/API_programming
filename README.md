@@ -1,6 +1,6 @@
 ﻿# API_programming
 
-# Initialize virtual environment on the commmand line
+## Initialize virtual environment on the commmand line
 Create virtual envirnoment
 ```
 py -m venv .venv
@@ -22,7 +22,7 @@ Freeze
 python -m pip freeze > requirements.txt
 ```
 
-# Installation
+## Installation
 Reference link: 
 https://fastapi.tiangolo.com/
 https://fastapi.tiangolo.com/async/#in-a-hurry
@@ -36,18 +36,21 @@ We need an ASGI server, for production such as Uvicorn
 pip install "uvicorn[standard]"
 ```
 
-# Commands:
+## Commands:
 Run server
 ```
 uvicorn main:app --reload
 ```
 
-# Some problems:
-* Problem 1: error: httptools
+## Some problems:
+* Problem 1: error: httptools.
 Solution 1: Install full "Desktop development with C++" 
 
-* Problem 2: Cannot access server from mobile devide
-Solution 2: Run server with command: uvicorn main:app --reload --host 0.0.0.0. 
+* Problem 2: Cannot access server from mobile devide.
+Solution 2: Run server with command: 
+```
+uvicorn main:app --reload --host 0.0.0.0. 
+```
 Read more: https://fastapi.tiangolo.com/zh/deployment/manually/ 
 
 
